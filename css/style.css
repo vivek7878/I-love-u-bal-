@@ -1,0 +1,192 @@
+/* ==========================
+   Google Font Base
+========================== */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    background:#120014;
+    font-family:'Poppins',sans-serif;
+    color:white;
+    overflow-x:hidden;
+}
+
+/* ==========================
+   Floating Hearts
+========================== */
+
+.heart{
+    position:fixed;
+    bottom:-50px;
+    font-size:25px;
+    animation:floatUp linear infinite;
+    opacity:.8;
+    pointer-events:none;
+    z-index:9999;
+}
+
+@keyframes floatUp{
+    0%{
+        transform:translateY(0) rotate(0deg);
+        opacity:0;
+    }
+    20%{
+        opacity:1;
+    }
+    100%{
+        transform:translateY(-120vh) rotate(360deg);
+        opacity:0;
+    }
+}
+
+/* ==========================
+   Hero Section
+========================== */
+
+.hero{
+    height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    flex-direction:column;
+    background:linear-gradient(135deg,#1b001f,#38002e,#5b003f);
+    text-align:center;
+    padding:20px;
+}
+
+.hero h1{
+    font-size:55px;
+    font-family:'Great Vibes',cursive;
+    color:#ffb3d9;
+}
+
+.hero h2{
+    margin-top:20px;
+    font-weight:300;
+}
+
+.hero button{
+    margin-top:40px;
+    padding:15px 40px;
+    font-size:18px;
+    border:none;
+    border-radius:40px;
+    background:#ff4f91;
+    color:white;
+    cursor:pointer;
+    transition:.4s;
+}
+
+.hero button:hover{
+    transform:scale(1.08);
+}
+
+/* ==========================
+   Sections
+========================== */
+
+section{
+    padding:80px 10%;
+}
+
+.title{
+    text-align:center;
+    font-size:40px;
+    margin-bottom:40px;
+    color:#ff9dc7;
+    font-family:'Great Vibes',cursive;
+}
+
+/* ==========================
+   Gallery
+========================== */
+
+.gallery{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:20px;
+}
+
+.gallery img{
+    width:100%;
+    height:320px;
+    object-fit:cover;
+    border-radius:20px;
+    transition:.4s;
+    box-shadow:0 0 20px rgba(255,80,150,.5);
+}
+
+.gallery img:hover{
+    transform:scale(1.06);
+    box-shadow:0 0 35px hotpink;
+}
+
+/* ==========================
+   Message Card
+========================== */
+
+.message{
+    max-width:900px;
+    margin:auto;
+    line-height:2;
+    font-size:18px;
+    padding:40px;
+    border-radius:25px;
+
+    background:rgba(255,255,255,.08);
+    backdrop-filter:blur(18px);
+    border:1px solid rgba(255,255,255,.15);
+    box-shadow:0 0 35px rgba(255,105,180,.25);
+}
+
+/* ==========================
+   Buttons
+========================== */
+
+.buttons{
+    text-align:center;
+    margin-top:50px;
+}
+
+button{
+    box-shadow:0 0 20px hotpink;
+    transition:.4s;
+}
+
+button:hover{
+    box-shadow:0 0 40px deeppink;
+}
+
+.buttons button{
+    padding:15px 35px;
+    font-size:18px;
+    margin:15px;
+    border:none;
+    border-radius:40px;
+    cursor:pointer;
+}
+
+#yes{
+    background:#ff4f91;
+    color:white;
+}
+
+#no{
+    background:white;
+    color:#ff4f91;
+}
+
+/* ==========================
+   Footer
+========================== */
+
+footer{
+    padding:30px;
+    text-align:center;
+    font-size:18px;
+    opacity:.8;
+}
